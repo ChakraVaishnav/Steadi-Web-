@@ -1,0 +1,8 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(ls -la \"/c/Users/gunta/Downloads/Steadi-Web\" 2>/dev/null && echo \"---APK---\" && ls -la \"/c/Users/gunta/Downloads/Steadi/app/build/outputs/apk/release/\")",
+      "Read(//c/Users/gunta/Downloads/Steadi/app/build/outputs/apk/release//**)"
+    ]
+  }
+}

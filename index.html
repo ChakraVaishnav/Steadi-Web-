@@ -1,0 +1,474 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Steadi — Offline AI Plank Coach | Never cheat a second</title>
+  <meta name="description" content="Steadi turns any Android phone into a hands-free, honest plank coach. On-device AI watches your form, coaches out loud, and times you to the frame. No account, no internet, no cheating." />
+  <meta name="theme-color" content="#07090c" />
+  <meta property="og:title" content="Steadi — Offline AI Plank Coach" />
+  <meta property="og:description" content="It watches, it coaches, it counts — and it never lets you cheat a second. 100% on-device AI. Zero internet." />
+  <meta property="og:type" content="website" />
+  <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+<body>
+
+  <!-- ambient background -->
+  <div class="aura aura-1" aria-hidden="true"></div>
+  <div class="aura aura-2" aria-hidden="true"></div>
+  <div class="aura aura-3" aria-hidden="true"></div>
+
+  <!-- ============ NAV ============ -->
+  <header class="nav">
+    <div class="container nav-inner">
+      <a class="brand" href="#" aria-label="Steadi home">
+        <svg class="brand-mark" viewBox="0 0 32 32" fill="none" aria-hidden="true">
+          <rect x="1" y="1" width="30" height="30" rx="9" fill="url(#lg1)"/>
+          <path d="M7 20.5h18M10 20.5c0-4 3.5-6.5 8-6.5s7 2 7 4.5" stroke="#04120a" stroke-width="2.4" stroke-linecap="round"/>
+          <circle cx="11.4" cy="12.6" r="2.6" fill="#04120a"/>
+          <defs><linearGradient id="lg1" x1="0" y1="0" x2="32" y2="32"><stop stop-color="#4ade80"/><stop offset="1" stop-color="#14b8a6"/></linearGradient></defs>
+        </svg>
+        <span class="brand-name">Steadi</span>
+      </a>
+      <nav class="nav-links" id="navLinks" aria-label="Main navigation">
+        <a href="#features">Features</a>
+        <a href="#how">How it works</a>
+        <a href="#privacy">Privacy</a>
+        <a href="#faq">FAQ</a>
+      </nav>
+      <div class="nav-actions">
+        <a href="#download" class="btn btn-primary btn-sm">Download APK</a>
+        <button class="menu-btn" id="menuBtn" aria-label="Toggle menu" aria-expanded="false">
+          <span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- ============ HERO ============ -->
+    <section class="hero">
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <p class="eyebrow" data-reveal><span class="pulse-dot"></span> Offline AI plank coach</p>
+          <h1 data-reveal>You hold the plank.<br /><span class="grad">It handles everything&nbsp;else.</span></h1>
+          <p class="hero-sub" data-reveal>
+            Steadi watches your form with on-device AI, starts your timer the instant
+            you're properly set, shouts corrections out loud, and stops the clock the
+            moment you break — no buttons, no account, no internet. Ever.
+          </p>
+          <div class="hero-ctas" data-reveal>
+            <a href="#download" class="btn btn-primary btn-lg">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3v12m0 0l-4-4m4 4l4-4M4 21h16"/></svg>
+              Download APK <span class="btn-meta" data-apk-size>v1.0 · 78 MB</span>
+            </a>
+            <a href="#how" class="btn btn-ghost btn-lg">See how it works</a>
+          </div>
+          <ul class="hero-proof" data-reveal>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 12.5l5 5L20 7"/></svg>No account</li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 12.5l5 5L20 7"/></svg>No internet needed</li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 12.5l5 5L20 7"/></svg>Free forever</li>
+          </ul>
+        </div>
+
+        <div class="hero-visual" data-reveal>
+          <div class="hero-glow" aria-hidden="true"></div>
+
+          <div class="phone-wrap">
+            <div class="floating-chip chip-tl">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="6" r="2.6"/><path d="M12 9.5v4m0 0l-3.5 7m3.5-7l3.5 7M7 12l5-1.5L17 12"/></svg>
+              33 landmarks tracked
+            </div>
+            <div class="floating-chip chip-r">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 12.5l5 5L20 7"/></svg>
+              Perfect form detected
+            </div>
+            <div class="floating-chip chip-bl">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="5" y="10" width="14" height="10" rx="2.5"/><path d="M8 10V7.5a4 4 0 0 1 8 0V10"/></svg>
+              0 bytes uploaded
+            </div>
+
+            <div class="phone">
+              <div class="punch" aria-hidden="true"></div>
+              <div class="screen" id="phoneScreen">
+
+                <svg class="phone-svg" id="phoneSvg" viewBox="0 0 280 560" preserveAspectRatio="xMidYMid slice" aria-label="Live camera view of a plank being tracked by AI">
+                  <defs>
+                    <radialGradient id="feedGrad" cx="50%" cy="36%" r="85%">
+                      <stop offset="0%" stop-color="#1a2a22"/>
+                      <stop offset="55%" stop-color="#101820"/>
+                      <stop offset="100%" stop-color="#0a0d11"/>
+                    </radialGradient>
+                    <filter id="glow" x="-80%" y="-80%" width="260%" height="260%">
+                      <feGaussianBlur stdDeviation="4.5" result="b"/>
+                      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+                    </filter>
+                  </defs>
+
+                  <rect width="280" height="560" fill="url(#feedGrad)"/>
+
+                  <!-- ground shadow + floor -->
+                  <ellipse cx="172" cy="455" rx="94" ry="7" fill="#000" opacity=".42"/>
+                  <line x1="18" y1="452" x2="262" y2="452" stroke="rgba(255,255,255,.22)" stroke-width="2" stroke-linecap="round"/>
+
+                  <!-- timer -->
+                  <text id="mockTimer" class="mock-timer" x="140" y="76" text-anchor="middle">0:00</text>
+
+                  <!-- spirit level -->
+                  <g id="levelGroup">
+                    <rect x="68" y="112" width="144" height="8" rx="4" fill="rgba(255,255,255,.13)"/>
+                    <line x1="68" y1="108" x2="68" y2="124" stroke="rgba(255,255,255,.25)" stroke-width="2" stroke-linecap="round"/>
+                    <line x1="212" y1="108" x2="212" y2="124" stroke="rgba(255,255,255,.25)" stroke-width="2" stroke-linecap="round"/>
+                    <line x1="140" y1="106" x2="140" y2="126" stroke="rgba(255,255,255,.4)" stroke-width="2" stroke-linecap="round"/>
+                    <g id="bubble"><circle cx="140" cy="116" r="8" filter="url(#glow)"/></g>
+                  </g>
+
+                  <!-- skeleton -->
+                  <g id="figure" filter="url(#glow)" stroke-linecap="round" stroke-linejoin="round">
+                    <!-- planted arm (static) : wrist -> elbow -> shoulder -->
+                    <path class="bone" d="M62 449 L114 447 L114 342" fill="none" stroke-width="7"/>
+                    <!-- neck -->
+                    <path class="bone" d="M97 331 L114 342" fill="none" stroke-width="7"/>
+                    <!-- head -->
+                    <circle class="bone-head" cx="88" cy="318" r="16" fill="none" stroke-width="6"/>
+                    <!-- spine + legs pivot at shoulder -->
+                    <g id="spine">
+                      <path class="bone" d="M114 342 L194 358" fill="none" stroke-width="7"/>
+                      <g id="legs">
+                        <path class="bone" d="M194 358 L240 398 L262 430 L278 448" fill="none" stroke-width="7"/>
+                      </g>
+                    </g>
+                    <!-- joints -->
+                    <g class="joints" fill="var(--skel)">
+                      <circle cx="114" cy="447" r="4.5"/>
+                      <circle cx="114" cy="342" r="4.5"/>
+                      <circle cx="194" cy="358" r="4.5"/>
+                      <circle cx="240" cy="398" r="4.5"/>
+                      <circle cx="262" cy="430" r="4.5"/>
+                    </g>
+                  </g>
+                </svg>
+
+                <!-- HUD overlays -->
+                <div class="hud hud-live"><span class="rec-dot"></span>LIVE</div>
+                <div class="hud hud-ai">ON-DEVICE AI</div>
+                <div class="cue-pill" id="cuePill">PERFECT FORM — HOLD IT</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ TICKER ============ -->
+    <section class="ticker" aria-hidden="true">
+      <div class="ticker-track">
+        <ul class="ticker-list">
+          <li>Works in airplane mode</li><li>·</li><li>No account required</li><li>·</li><li>Frame-accurate timing</li><li>·</li><li>Voice coaching built in</li><li>·</li><li>Your data never leaves the device</li><li>·</li><li>Zero taps mid-workout</li><li>·</li>
+        </ul>
+        <ul class="ticker-list" aria-hidden="true">
+          <li>Works in airplane mode</li><li>·</li><li>No account required</li><li>·</li><li>Frame-accurate timing</li><li>·</li><li>Voice coaching built in</li><li>·</li><li>Your data never leaves the device</li><li>·</li><li>Zero taps mid-workout</li><li>·</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ============ STATS ============ -->
+    <section class="stats">
+      <div class="container stats-grid">
+        <div class="stat" data-reveal><span class="stat-num">33</span><span class="stat-label">landmarks graded<br />every single frame</span></div>
+        <div class="stat" data-reveal><span class="stat-num">~60<small>fps</small></span><span class="stat-label">real-time form<br />analysis on GPU</span></div>
+        <div class="stat" data-reveal><span class="stat-num">1<small>s</small></span><span class="stat-label">auto-calibration of<br />floor &amp; hip height</span></div>
+        <div class="stat" data-reveal><span class="stat-num">0</span><span class="stat-label">bytes uploaded.<br />Not now, not ever.</span></div>
+      </div>
+    </section>
+
+    <!-- ============ FEATURES ============ -->
+    <section class="section" id="features">
+      <div class="container">
+        <header class="sec-head">
+          <p class="eyebrow" data-reveal>Features</p>
+          <h2 data-reveal>Every rep watched.<br /><span class="grad">Every second honest.</span></h2>
+          <p class="sec-sub" data-reveal>A personal trainer's eyes, a stopwatch's precision, and a vault's discretion — running entirely on the phone in your pocket.</p>
+        </header>
+
+        <div class="features-grid">
+          <article class="f-card" data-reveal>
+            <div class="f-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="6.5" r="2.5"/><path d="M12 9.5v4.5m0 0l-3.5 6.5m3.5-6.5l3.5 6.5M6.5 12.5L12 11l5.5 1.5"/><path d="M3 8V5a2 2 0 0 1 2-2h3M21 8V5a2 2 0 0 0-2-2h-3M3 16v3a2 2 0 0 0 2 2h3M21 16v3a2 2 0 0 1-2 2h-3"/></svg>
+            </div>
+            <h3>Sees form like a coach</h3>
+            <p>MediaPipe's pose model runs on your phone's GPU, tracking 33 body landmarks in real time and drawing a glowing skeleton over your camera feed.</p>
+          </article>
+
+          <article class="f-card" data-reveal>
+            <div class="f-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="13" r="8"/><path d="M12 9.5V13l2.5 2.5M9.5 2h5"/></svg>
+            </div>
+            <h3>A timer that starts itself</h3>
+            <p>The clock refuses to run while you stand, sit, or kneel. It starts the instant your body is horizontal, legs straight, hips in line — and not a second before.</p>
+          </article>
+
+          <article class="f-card" data-reveal>
+            <div class="f-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" aria-hidden="true"><path d="M4 10v4M8 7v10M12 4v16M16 7v10M20 10v4"/></svg>
+            </div>
+            <h3>Voice cues, zero nagging</h3>
+            <p>Hips sagging? You hear “Up”. Piking? “Down”. Legs bent? Told to straighten. Nail a dead-straight hold and you get one quiet “perfect form” — once.</p>
+          </article>
+
+          <article class="f-card" data-reveal>
+            <div class="f-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" aria-hidden="true"><rect x="2.5" y="9" width="19" height="6" rx="3"/><circle cx="12" cy="12" r="1.8" fill="currentColor" stroke="none"/><path d="M5.5 9v-.5M18.5 9v-.5M5.5 15.5v.5M18.5 15.5v.5"/></svg>
+            </div>
+            <h3>The spirit level</h3>
+            <p>The signature piece: a bubble under the timer drifts left when you pike, right when you sag, and locks dead-center while you're steady. A haptic tick every second.</p>
+          </article>
+
+          <article class="f-card" data-reveal>
+            <div class="f-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7.5 11.5V6.8a1.4 1.4 0 0 1 2.8 0v4M10.3 10.5V5.2a1.4 1.4 0 0 1 2.8 0v5.1M13.1 10.5V6.1a1.4 1.4 0 0 1 2.8 0v5.6M15.9 11.7v-1.2a1.4 1.4 0 0 1 2.8 0v3.7A6.8 6.8 0 0 1 11.9 21h-.7a6.8 6.8 0 0 1-6.7-6.8v-1.9a1.4 1.4 0 0 1 2.8 0"/></svg>
+            </div>
+            <h3>Honest to the frame</h3>
+            <p>Knees touch, torso drops — the timer stops itself, accurate to the frame. Show your raised hand to the camera to reset. An entire workout, zero screen touches.</p>
+          </article>
+
+          <article class="f-card" data-reveal>
+            <div class="f-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="9" r="5.5"/><path d="M12 6.8l.9 1.8 2 .3-1.4 1.4.3 2-1.8-1-1.8 1 .3-2L9.1 8.9l2-.3zM8.5 13.8L7 21l5-2.5L17 21l-1.5-7.2"/></svg>
+            </div>
+            <h3>History &amp; personal best</h3>
+            <p>Every hold saved locally with date and day, your best time pinned on top. Swipe into select mode to bulk-delete old logs. Your record stays yours.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ HOW IT WORKS ============ -->
+    <section class="section how" id="how">
+      <div class="container">
+        <header class="sec-head">
+          <p class="eyebrow" data-reveal>How it works</p>
+          <h2 data-reveal>From pocket to plank<br /><span class="grad">in four steps.</span></h2>
+        </header>
+        <ol class="steps-grid">
+          <li class="step" data-reveal>
+            <span class="step-num">01</span>
+            <h3>Prop &amp; launch</h3>
+            <p>Set your phone against a wall and hit Start. The front camera wakes and a glowing skeleton appears over your body.</p>
+          </li>
+          <li class="step" data-reveal>
+            <span class="step-num">02</span>
+            <h3>One-second calibration</h3>
+            <p>Once your full body is visible, Steadi spends a second learning where the floor is and where your hips sit.</p>
+          </li>
+          <li class="step" data-reveal>
+            <span class="step-num">03</span>
+            <h3>Hold — it counts</h3>
+            <p>The timer only runs in a true plank. While you hold, every frame is graded and corrections play out loud the moment you drift.</p>
+          </li>
+          <li class="step" data-reveal>
+            <span class="step-num">04</span>
+            <h3>Break, reset, repeat</h3>
+            <p>Knees down? Clock frozen, honestly. Raise your hand to reset, drop back into position, and it counts again. Hands-free.</p>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- ============ SPIRIT LEVEL SPOTLIGHT ============ -->
+    <section class="section level-spot">
+      <div class="container spot-grid">
+        <div class="spot-copy">
+          <p class="eyebrow" data-reveal>The spirit level</p>
+          <h2 data-reveal>Your stability,<br /><span class="grad">as an instrument reading.</span></h2>
+          <p data-reveal>Borrowed from a toolshelf and rebuilt for the gym floor: a live bubble that turns your own wobble into something you can watch — and beat.</p>
+          <ul class="spot-list" data-reveal>
+            <li>Drifts right the moment your hips sag</li>
+            <li>Drifts left the moment you pike</li>
+            <li>Locks dead-center with a green glow while you're steady</li>
+            <li>Pairs with a haptic tick every second you hold</li>
+          </ul>
+        </div>
+        <div class="spot-demo" data-reveal>
+          <div class="level-demo" id="levelDemo">
+            <div class="level-frame">
+              <div class="level-track" id="levelTrack">
+                <span class="tick t-l"></span><span class="tick t-r"></span>
+                <span class="center-notch"></span>
+                <div class="level-bubble" id="levelBubble"></div>
+              </div>
+            </div>
+            <div class="level-readout">
+              <span class="level-status" id="levelStatus">LOCKED · DEAD CENTER</span>
+              <span class="level-deg mono" id="levelDeg">0.0°</span>
+            </div>
+            <p class="level-hint">Move your cursor across the track — feel it snap back to center.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ PRIVACY ============ -->
+    <section class="section privacy" id="privacy">
+      <div class="container">
+        <header class="sec-head">
+          <p class="eyebrow" data-reveal>Privacy by design</p>
+          <h2 data-reveal>Your sweat<br /><span class="grad">stays yours.</span></h2>
+          <p class="sec-sub" data-reveal>There is no server to breach, no login to leak, and no analytics counting your reps for someone else's dashboard. The AI model is bundled inside the app and inference happens on your phone's GPU. Flip on airplane mode — Steadi won't even notice.</p>
+        </header>
+        <div class="badge-row" data-reveal>
+          <div class="p-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3l7 3v5.5c0 4.4-2.9 7.6-7 9.5-4.1-1.9-7-5.1-7-9.5V6z"/><path d="M9 12l2 2 4-4.5"/></svg>No server</div>
+          <div class="p-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="5" y="10" width="14" height="10" rx="2.5"/><path d="M8 10V7.5a4 4 0 0 1 8 0V10"/></svg>No login</div>
+          <div class="p-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 3l18 18M10.5 5.2A9.8 9.8 0 0 1 12 5c5 0 9 4.5 10 7-.4 1-1.4 2.4-2.8 3.7M6.6 6.6C4.3 8 2.7 10.1 2 12c1 2.5 5 7 10 7 1.5 0 2.9-.4 4.2-1M9.9 9.9a3 3 0 0 0 4.2 4.2"/></svg>No camera roll access</div>
+          <div class="p-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M8.5 8.5l7 7M15.5 8.5l-7 7"/></svg>No analytics</div>
+          <div class="p-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 2L11 13M22 2l-7 20-4-9-9-4z"/></svg>Data never leaves the device</div>
+          <div class="p-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10.5 13.5L3 11l1.5-1.5L10 10l4.5-4.5a1.8 1.8 0 0 1 2.5 2.5L12.5 12.5 13 18l-1.5 1.5-2.5-7.5z" transform="translate(1.5 1.5) scale(.82)"/></svg>Airplane-mode proof</div>
+        </div>
+        <p class="privacy-note" data-reveal>Your video is never recorded, stored, or sent anywhere — landmarks are processed live in memory and discarded. Only your hold times, saved locally, ever persist.</p>
+      </div>
+    </section>
+
+    <!-- ============ TECH ============ -->
+    <section class="tech">
+      <div class="container tech-row" data-reveal>
+        <span class="tech-label">Built native</span>
+        <div class="tech-chips">
+          <span class="tech-chip">Kotlin</span>
+          <span class="tech-chip">Jetpack Compose</span>
+          <span class="tech-chip">CameraX</span>
+          <span class="tech-chip">MediaPipe</span>
+          <span class="tech-chip">DataStore</span>
+          <span class="tech-chip">Android 7.0+</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ DOWNLOAD ============ -->
+    <section class="section download" id="download">
+      <div class="container">
+        <div class="download-card" data-reveal>
+          <div class="dl-head">
+            <svg class="dl-icon" viewBox="0 0 32 32" fill="none" aria-hidden="true">
+              <rect x="1" y="1" width="30" height="30" rx="9" fill="url(#dlg)"/>
+              <path d="M7 20.5h18M10 20.5c0-4 3.5-6.5 8-6.5s7 2 7 4.5" stroke="#04120a" stroke-width="2.4" stroke-linecap="round"/>
+              <circle cx="11.4" cy="12.6" r="2.6" fill="#04120a"/>
+              <defs><linearGradient id="dlg" x1="0" y1="0" x2="32" y2="32"><stop stop-color="#4ade80"/><stop offset="1" stop-color="#14b8a6"/></linearGradient></defs>
+            </svg>
+            <h2>Get Steadi on your phone</h2>
+            <p>Direct download. Sideload it once, hold planks forever.</p>
+          </div>
+
+          <div class="dl-meta mono">
+            <span>Version <strong>1.0</strong></span>
+            <span class="dot-sep" aria-hidden="true"></span>
+            <span><strong data-apk-size>78 MB</strong> APK</span>
+            <span class="dot-sep" aria-hidden="true"></span>
+            <span>Android <strong>7.0+</strong></span>
+          </div>
+
+          <a class="btn btn-primary btn-xl" href="assets/apk/steadi-v1.0.apk" download="Steadi-v1.0.apk">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3v12m0 0l-4-4m4 4l4-4M4 21h16"/></svg>
+            Download APK — free
+          </a>
+
+          <details class="hash-box">
+            <summary><span class="mono">SHA-256 · bc88d506…cd797b</span><span class="hash-toggle">verify</span></summary>
+            <div class="hash-body">
+              <code class="mono" id="fullHash">bc88d506ecca625bc2f3fe411adf2050bde29dc207809496abd67ca618cd797b</code>
+              <button class="btn btn-ghost btn-sm" id="copyHash" type="button">Copy</button>
+            </div>
+          </details>
+
+          <ol class="install-steps">
+            <li>
+              <h4>Tap download</h4>
+              <p>Android will warn about unknown apps — expected for anything outside the Play Store.</p>
+            </li>
+            <li>
+              <h4>Allow once</h4>
+              <p>Choose “Install anyway” / allow your browser to install apps when prompted.</p>
+            </li>
+            <li>
+              <h4>Open &amp; hold</h4>
+              <p>Type your name once, prop the phone against a wall, and get down. That's the whole tutorial.</p>
+            </li>
+          </ol>
+
+          <p class="dl-note">Play Protect may scan the file before installing — normal for sideloaded apps. Steadi requests only your camera, and nothing it sees ever leaves the phone.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ FAQ ============ -->
+    <section class="section faq" id="faq">
+      <div class="container container-narrow">
+        <header class="sec-head">
+          <p class="eyebrow" data-reveal>FAQ</p>
+          <h2 data-reveal>Fair questions,<br /><span class="grad">straight answers.</span></h2>
+        </header>
+        <div class="faq-list">
+          <details class="faq-item" data-reveal>
+            <summary>Does it really need no internet?<span class="faq-icon" aria-hidden="true"></span></summary>
+            <p>Really. The MediaPipe pose model is bundled inside the APK and inference runs on your phone's GPU. Airplane mode changes nothing — open it, prop it, plank.</p>
+          </details>
+          <details class="faq-item" data-reveal>
+            <summary>How does it judge my form?<span class="faq-icon" aria-hidden="true"></span></summary>
+            <p>It tracks 33 body landmarks every frame and measures what a coach measures: body angle relative to the floor, hip line, knee bend. Cross the thresholds and you hear about it immediately.</p>
+          </details>
+          <details class="faq-item" data-reveal>
+            <summary>What exactly stops the timer?<span class="faq-icon" aria-hidden="true"></span></summary>
+            <p>Only failure: knees touching the ground or your torso dropping to the floor. The clock freezes accurate to the frame — no grace seconds, no cheating. Raise a hand to the camera and it resets for the next round.</p>
+          </details>
+          <details class="faq-item" data-reveal>
+            <summary>Is my video saved anywhere?<span class="faq-icon" aria-hidden="true"></span></summary>
+            <p>No. Frames are analyzed live in memory and discarded instantly. Nothing is recorded, nothing is uploaded, and the only thing persisted is your hold history — stored locally on your device.</p>
+          </details>
+          <details class="faq-item" data-reveal>
+            <summary>Which phones does it work on?<span class="faq-icon" aria-hidden="true"></span></summary>
+            <p>Any Android phone from 7.0 (Nougat) onward with a front camera. Newer phones get faster inference thanks to GPU acceleration, but it runs everywhere.</p>
+          </details>
+          <details class="faq-item" data-reveal>
+            <summary>Why isn't it on the Play Store?<span class="faq-icon" aria-hidden="true"></span></summary>
+            <p>It ships here first, direct and unencumbered. Verify the SHA-256 checksum above after downloading if you want certainty the file is untouched.</p>
+          </details>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="footer">
+    <div class="container foot-grid">
+      <div class="brand-col">
+        <a class="brand" href="#">
+          <svg class="brand-mark" viewBox="0 0 32 32" fill="none" aria-hidden="true">
+            <rect x="1" y="1" width="30" height="30" rx="9" fill="url(#lgf)"/>
+            <path d="M7 20.5h18M10 20.5c0-4 3.5-6.5 8-6.5s7 2 7 4.5" stroke="#04120a" stroke-width="2.4" stroke-linecap="round"/>
+            <circle cx="11.4" cy="12.6" r="2.6" fill="#04120a"/>
+            <defs><linearGradient id="lgf" x1="0" y1="0" x2="32" y2="32"><stop stop-color="#4ade80"/><stop offset="1" stop-color="#14b8a6"/></linearGradient></defs>
+          </svg>
+          <span class="brand-name">Steadi</span>
+        </a>
+        <p class="foot-tag">Built for people who'd rather hold than tap.</p>
+      </div>
+      <nav class="foot-links" aria-label="Footer">
+        <a href="#features">Features</a>
+        <a href="#how">How it works</a>
+        <a href="#privacy">Privacy</a>
+        <a href="#download">Download</a>
+        <a href="#faq">FAQ</a>
+      </nav>
+    </div>
+    <div class="container foot-bottom">
+      <span>© 2026 Steadi · Hold steady.</span>
+      <span class="mono">Made with Kotlin, Compose &amp; too much chalk.</span>
+    </div>
+  </footer>
+
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
